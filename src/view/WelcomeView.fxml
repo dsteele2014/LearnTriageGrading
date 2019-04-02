@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.WelcomeViewController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="quitButton" layoutX="202.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleQuitButton" prefHeight="40.0" prefWidth="95.0" style="-fx-background-color: #ED2939; -fx-border-color: #B22222; -fx-border-width: 3;" text="Quit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="takeQuizButton" layoutX="180.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleTakeQuizButton" prefHeight="84.0" prefWidth="140.0" style="-fx-background-color: limegreen; -fx-border-color: green; -fx-border-width: 3;" text="Take Quiz">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Text layoutX="111.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="an Educational Quiz">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="77.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Triage Grading">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+            <Text layoutX="185.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learn">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

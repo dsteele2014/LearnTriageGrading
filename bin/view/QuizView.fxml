@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizViewController">
+   <children>
+      <Text layoutX="50.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate the following on how well they answer the prompt below." textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="63.591796875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which animal is best? Provide evidence for your claim." textAlignment="CENTER" wrappingWidth="400.263671875" />
+      <Text layoutX="43.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.   &quot;The best animal is a cat because they are adorable.&quot;" wrappingWidth="400.263671875" />
+      <RadioButton fx:id="excellentButton1" layoutX="50.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#handleExcellent1" text="Excellent" />
+      <RadioButton fx:id="okayButton1" layoutX="165.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#handleOkay1" text="Okay" />
+      <RadioButton fx:id="poorButton1" layoutX="270.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#handlePoor1" text="Poor" />
+      <RadioButton fx:id="didntTryButton1" layoutX="363.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#handleDidntTry1" text="Didn't Try" />
+      <Text layoutX="42.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.   &quot;Cow is best.&quot;" wrappingWidth="400.263671875" />
+      <Text layoutX="42.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.   &quot;A kangaroo is the best animal because it is very strong and it has a" wrappingWidth="400.263671875" />
+      <Text layoutX="42.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.   &quot;I don't know which animal is best animal.&quot;" wrappingWidth="400.263671875" />
+      <RadioButton fx:id="excellentButton2" layoutX="50.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleExcellent2" text="Excellent" />
+      <RadioButton fx:id="excellentButton3" layoutX="50.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleExcellent3" text="Excellent" />
+      <RadioButton fx:id="excellentButton4" layoutX="50.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleExcellent4" text="Excellent" />
+      <RadioButton fx:id="okayButton2" layoutX="165.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleOkay2" text="Okay" />
+      <RadioButton fx:id="okayButton3" layoutX="165.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleOkay3" text="Okay" />
+      <RadioButton fx:id="okayButton4" layoutX="165.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleOkay4" text="Okay" />
+      <RadioButton fx:id="poorButton2" layoutX="270.0" layoutY="257.0" mnemonicParsing="false" onAction="#handlePoor2" text="Poor" />
+      <RadioButton fx:id="poorButton3" layoutX="270.0" layoutY="351.0" mnemonicParsing="false" onAction="#handlePoor3" text="Poor" />
+      <RadioButton fx:id="poorButton4" layoutX="270.0" layoutY="426.0" mnemonicParsing="false" onAction="#handlePoor4" text="Poor" />
+      <RadioButton fx:id="didntTryButton2" layoutX="363.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleDidntTry2" text="Didn't Try" />
+      <RadioButton fx:id="didntTryButton3" layoutX="363.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleDidntTry3" text="Didn't Try" />
+      <RadioButton fx:id="didntTryButton4" layoutX="363.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleDidntTry4" text="Didn't Try" />
+      <Button layoutX="333.0" layoutY="505.0" mnemonicParsing="false" onAction="#handleSubmitButton" prefHeight="53.0" prefWidth="85.0" style="-fx-background-color: limegreen; -fx-border-color: green;" text="Sumbit" />
+      <Button layoutX="84.0" layoutY="505.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="53.0" prefWidth="85.0" style="-fx-background-color: #ED2939; -fx-border-color: #B22222;" text="Back" />
+      <Text layoutX="64.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pouch to carry and protect its young.&quot;" wrappingWidth="201.263671875" />
+      <Label fx:id="errorLabel" layoutX="137.0" layoutY="472.0" text="You must answer all questions to continue." textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
